@@ -5,10 +5,9 @@ const userRouter = require('./routes/userRoutes')
 
 const app = express()
 
-// native middleware
 app.use(express.json())
 app.use(morgan('dev'))
-// custom middleware
+
 app.use((request, response, next) => {
   request.time = new Date().toISOString()
   next()
