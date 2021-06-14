@@ -5,7 +5,8 @@
   "author": "wanderley rabelo <padawandr@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "prod": "NODE_ENV=production nodemon src/server.js"
   },
   "devDependencies": {
     "eslint": "^7.28.0",
